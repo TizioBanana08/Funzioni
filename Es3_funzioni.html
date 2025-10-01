@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Esercizio 1 funzioni</title>
+    </head>
+    <body>
+        <h1>Esercizio 3</h1>
+        <p>Controlla il log</p>
+    </body>
+    <script>
+        let messaggio = "globale";
+        function mostraMessaggio(){
+            let messaggio="ciao";
+            console.log("Dentro la funzione: "+messaggio);
+        }
+        console.log(mostraMessaggio());
+        console.log("Fuori la funzione: "+messaggio);
+        (function(){
+            var segreto="12345";
+            console.log("Segreto nella funzione: "+segreto);
+        })();
+        console.log("Segreto furoi dalla funzione: "+segreto);
+    </script>
+</html>
