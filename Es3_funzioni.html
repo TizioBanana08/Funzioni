@@ -11,16 +11,21 @@
     </body>
     <script>
         let messaggio = "globale";
+        //Nella funzione sarà stampato "ciao" quando richiamata
         function mostraMessaggio(){
             let messaggio="ciao";
             console.log("Dentro la funzione: "+messaggio);
         }
         console.log(mostraMessaggio());
+        //Stampando messaggio fuori dall funzione verrà stampato globale
         console.log("Fuori la funzione: "+messaggio);
+        //Segreto verrà stampato quadno richiamata la funzione
         (function(){
             var segreto="12345";
             console.log("Segreto nella funzione: "+segreto);
         })();
+        //Darà errore perché segreto non esiste al di fuori della funzione
         console.log("Segreto furoi dalla funzione: "+segreto);
     </script>
+
 </html>
